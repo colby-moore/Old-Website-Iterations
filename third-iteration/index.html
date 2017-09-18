@@ -1,0 +1,67 @@
+<!doctype html>
+
+<html>
+	<head>
+		<title>colby's room</title>
+		<link rel="stylesheet" href="css/style.css">
+		<link href="http://fonts.googleapis.com/css?family=Raleway:400,700,800,900,500,600,300,200" rel="stylesheet" type="text/css">
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+		<!-- Optional theme -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+	</head>
+	<body>
+		<div class="header"><h3>Colby A. Moore</h3></div>
+		<div class="firstView col-md-12">
+			<h3>College student and Software Developer from Simsbury, Connecticut. Dedication to simple and innovative software solutions and designs.</h3>
+			<a href="#buttonAnchor"><button type="button" class="button">Info</button>
+		</div>
+		<div class="container">
+			<div class="row">
+				<div class="resumeHeader col-md-12">
+					<a name="buttonAnchor"></a>
+					<p>I strive at creating simple, yet polished designs through using many different variations of design principles. There is no better way to learn than experience, and through trial and error I aim to broaden my knowledge each day. </p>
+				</div>
+				<div class="resumeInfo col-md-3">
+					<p class="infoTopMargin">Pursuing BA in Computer Science <br>with a concentration in Software Development.</p>
+					<p>Minors: Cybersecurity, <br>IT, as well as IS. </p>
+					<a href="http://www.marist.edu/compscimath/">Marist College</a>
+					<p>2013 - Present</p>
+					<p>Graduating May 2017</p>
+					<a href="resume.html" class="foo">Resume</a>
+				</div>
+				<div class="resumeBody col-md-9">
+					<p class="foo">As a kid I've always loved building and making things. There was always something so pleasing about completing something that you spent so much time and effort on, whether with your friends or on your own. My plan wasn't always to be majoring in Computer Science though. While taking a web development class we had just finished our first assignment and that same nostolgic satisfaction I had as a kid came back to me. From there on out I knew Computer Science was what I wanted to do.</p>
+
+					<p>Although I have a concentration in software development at school, I am also working towards minors in Cybersecurity, Information Technology, and Information Systems. I have taken classes such as hacking and penetration and will be taking a class in mobile security for my Cybersecurity minor, internetworking and data communications for IT, as well as database management and systems design and analysis for IS. </p>
+
+					<p>I will be graduating form <a href="http://www.marist.edu/compscimath/">Marist College</a> in May of 2017 and I look forward to furthering the knowledge that I have obtained while learning at this institution. </p>
+				</div>
+				<div class="footer col-md-12"></div>
+			</div>
+		</div>
+
+
+
+		<!-- Latest compiled and minified JavaScript -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+		<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+		<script src="js/bootstrap.js"></script>
+		<script>
+		$(function() {
+		  $('a[href*="#"]:not([href="#"])').click(function() {
+		    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+		      var target = $(this.hash);
+		      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+		      if (target.length) {
+		        $('html, body').animate({
+		          scrollTop: target.offset().top
+		        }, 1000);
+		        return false;
+		      }
+		    }
+		  });
+		});</script>
+	</body>
+</html>
