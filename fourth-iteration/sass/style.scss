@@ -66,6 +66,9 @@ h3{
             justify-self: center;
             width: 37%;
             align-self: center;
+            @media screen and (max-width: 900px){
+                width: 83.3333%;
+            }
         }
 
     .hero-stripe{

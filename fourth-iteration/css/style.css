@@ -67,6 +67,11 @@ h3 {
   width: 37%;
   align-self: center;
 }
+@media screen and (max-width: 900px) {
+  .quote-content {
+    width: 83.3333%;
+  }
+}
 
 .hero-stripe {
   padding: 120px 60px;
