@@ -58,6 +58,9 @@ h3{
         align-items: center;
         justify-items: center;
         min-height: calc(100vh - 70px);
+        // background-image: url(https://images.pexels.com/photos/1903747/pexels-photo-1903747.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
+        // background-size: cover;
+        // background-position: bottom;
     }
 
         .quote-content{
@@ -73,7 +76,7 @@ h3{
 
     .hero-stripe{
         padding: 120px 60px;
-        background-color: greenyellow;
+        background-color: #00bb8e;
     }
     
   .jumbotron{
