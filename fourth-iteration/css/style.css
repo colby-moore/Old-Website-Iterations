@@ -97,10 +97,11 @@ a.selected {
   height: 100vh; }
 
 .box {
-  background-size: 100%;
+  background-size: cover;
   height: 50%;
   background-image: url(https://images.pexels.com/photos/1851471/pexels-photo-1851471.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
-  background-repeat: no-repeat; }
+  background-repeat: no-repeat;
+  background-position: center; }
 
 .hero-stripe {
   padding: 120px 60px;
