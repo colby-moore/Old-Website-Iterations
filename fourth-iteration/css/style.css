@@ -96,12 +96,27 @@ a.selected {
 .full-page {
   height: 100vh; }
 
+/* Work boxes */
+.work-boxes {
+  padding: 0px !important;
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1px;
+  background-color: #fff;
+  color: #444; }
+
 .box {
-  background-size: cover;
-  height: 50%;
-  background-image: url(https://images.pexels.com/photos/1851471/pexels-photo-1851471.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
-  background-repeat: no-repeat;
-  background-position: center; }
+  position: relative;
+  max-width: 100%;
+  background-color: #444;
+  color: #fff;
+  border-radius: 5px;
+  font-size: 150%; }
+
+.box img {
+  height: 100%;
+  width: 100%; }
 
 .hero-stripe {
   padding: 120px 60px;
