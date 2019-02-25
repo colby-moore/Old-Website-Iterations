@@ -125,7 +125,7 @@ h3{
     grid-gap: 1px;
     background-color: #fff;
     color: #444;
-    @media screen and (max-width: 900px){
+    @media screen and (max-width: 1024px){
       grid-template-columns: repeat(2,1fr);
     }
 

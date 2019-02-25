@@ -127,7 +127,7 @@ a.selected {
   background-color: #fff;
   color: #444;
 }
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1024px) {
   .work-boxes {
     grid-template-columns: repeat(2, 1fr);
   }
