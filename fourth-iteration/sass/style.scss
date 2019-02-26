@@ -110,13 +110,16 @@ h3{
 
   .arrow-bounce{
     position: absolute;
-    bottom: 64px;
+    bottom: 30px;
     width: 100%;
     left: auto;
     display: flex;
     align-items: center;
     align-content: center;
     justify-content: center;
+    @media screen and (max-width: 600px){
+      bottom: 20px;
+    }
   }
 
     .arrow-bounce img{
