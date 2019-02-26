@@ -108,6 +108,29 @@ h3{
         }
     }
 
+  .arrow-bounce{
+    position: absolute;
+    bottom: 64px;
+    width: 100%;
+    left: auto;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+  }
+
+    .arrow-bounce img{
+      // animation-delay: 2s;
+      // animation: colorchangereverse 11s infinite 1.25s; /* animation-name followed by duration in seconds*/
+      // /* you could also use milliseconds (ms) or something like 2.5s */
+      // -webkit-animation: colorchangereverse 11s infinite 1.25s; /* Chrome and Safari */
+      animation-delay: 7s;
+      animation: bounce 2.75s infinite 7.25s; /* animation-name followed by duration in seconds*/
+      /* you could also use milliseconds (ms) or something like 2.5s */
+      -webkit-animation: bounce 2.75s infinite 7.25s; /* Chrome and Safari */
+      width: 40px;
+    }
+
 .half-page{
   height: 50vh;
 }
@@ -122,7 +145,6 @@ h3{
     height:100%;
     display: grid;
     grid-template-columns: repeat(3,1fr);
-    grid-gap: 1px;
     background-color: #fff;
     color: #444;
     @media screen and (max-width: 1024px){
@@ -152,7 +174,7 @@ h3{
 
 .hero-stripe{
     padding: 120px 60px;
-    background-color: #00bb8e;
+    background-color: #CBEDE9;
 }
     
   .jumbotron{
@@ -239,6 +261,23 @@ h3{
   0%   {background: #ffffff;}
   33%   {background: #CBEDE9;}
   66%  {background: #FFBBBA;}
+  100%  {background: #ffffff;}
+}
+
+@keyframes colorchangereverse
+{
+  0%   {background: #ffffff;}
+  33%   {background: #FBC4C4;}
+  66%  {background: #CBEDE9;}
+  100%  {background: #ffffff;}
+
+}
+
+@-webkit-keyframes colorchangereverse /* Safari and Chrome - necessary duplicate */
+{
+  0%   {background: #ffffff;}
+  33%   {background: #FBC4C4;}
+  66%  {background: #CBEDE9;}
   100%  {background: #ffffff;}
 }
 
