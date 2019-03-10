@@ -95,7 +95,7 @@ h3{
     // background-position: bottom;
 }
 
-    .home-quote-content{
+    .quote-content{
         padding: 50px;
         text-align: left;
         margin: 0 auto;
@@ -107,20 +107,6 @@ h3{
             padding: 14px;
         }
     }
-
-    .whoami-quote-content{
-      font-weight: 900;
-      font-size: 40px;
-      text-align: left;
-      margin: 0 auto;
-      justify-self: center;
-      width: 37%;
-      align-self: center;
-      @media screen and (max-width: 1024px){
-          padding: 14px;
-          width: 83.3333%;
-      }
-  }
 
     .content-divider-home{
       display: block;
@@ -193,6 +179,8 @@ h3{
     max-width: 100%;
     background-color: #444;
     color: #fff;
+    border-radius: 5px;
+    
     font-size: 150%;
   }
   .box img{
@@ -202,17 +190,8 @@ h3{
 /* End work boxes */
 
 .hero-stripe{
-  padding: 120px 0px;
-  // background-color: #cbede9;
-  // background-image: url(/images/pattern.png);
-  background-color: #fbc4c4;
-  background-image: url("https://www.transparenttextures.com/patterns/arches.png");
-  /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
-  /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
-
-  @media only screen and (max-width: 400px) {
-    padding: 75px 0px;
-  }
+    padding: 120px 60px;
+    background-color: #CBEDE9;
 }
 
 .whoami-image{
@@ -239,9 +218,6 @@ h3{
 
   .whoami-text p{
     padding: 100px;
-    @media only screen and (max-width: 1200px) {
-      padding: 75px;
-    }
     @media only screen and (max-width: 768px) {
       padding: 50px;
     }
@@ -253,9 +229,7 @@ h3{
   display: flex;
   height: 100vh;
   align-items: center;
-  background-color: #CBEDE9;
-  background: url(/images/pattern.png);
-  background-position: center;
+  background-color: #FBC4C4;
 }
 
 .content-title{
@@ -307,12 +281,6 @@ h3{
 
 
 /* End connect*/
-
-.box-shadow{
-  -webkit-box-shadow: 3px 5px 63px 1px rgba(0,0,0,0.75);
-  -moz-box-shadow: 3px 5px 63px 1px rgba(0,0,0,0.75);
-  box-shadow: 3px 5px 63px 1px rgba(0,0,0,0.75);
-}
     
   .jumbotron{
       z-index: 0;
