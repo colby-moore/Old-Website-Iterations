@@ -111,11 +111,14 @@ h3{
         text-align: left;
         margin: 0 auto;
         justify-self: center;
-        width: 42%;
+        width: 37%;
         align-self: center;
         @media screen and (max-width: 1024px){
             width: 83.3333%;
             padding: 14px;
+        }
+        @media screen and (min-width:1600px) {
+          width: 30%;
         }
     }
 
@@ -129,6 +132,9 @@ h3{
           padding: 14px;
           width: 83.3333%;
       }
+      @media screen and (min-width:1600px) {
+        width: 30%;
+      }
   }
 
   .projects-quote-content{
@@ -141,6 +147,9 @@ h3{
     @media screen and (max-width: 1024px){
         padding: 14px;
         width: 83.3333%;
+    }
+    @media screen and (min-width:1600px) {
+      width: 30%;
     }
 }
 
@@ -278,6 +287,7 @@ h3{
 
 .hero-stripe-whoami{
   h1{
+    text-transform: uppercase;
     color: #ba81ff;
   }
   p{
@@ -296,6 +306,7 @@ h3{
 
 .hero-stripe-projects{
   h1{
+    text-transform: uppercase;
     color: #15A3F9;
   }
   p{
@@ -313,6 +324,7 @@ h3{
 
 .hero-stripe-contact{
   h1{
+    text-transform: uppercase;
     color: #56ebc3;
   }
   p{

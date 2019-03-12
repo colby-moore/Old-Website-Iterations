@@ -89,12 +89,15 @@ a.selected {
   text-align: left;
   margin: 0 auto;
   justify-self: center;
-  width: 42%;
+  width: 37%;
   align-self: center; }
   @media screen and (max-width: 1024px) {
     .home-quote-content {
       width: 83.3333%;
       padding: 14px; } }
+  @media screen and (min-width: 1600px) {
+    .home-quote-content {
+      width: 30%; } }
 
 .whoami-quote-content {
   text-align: left;
@@ -106,6 +109,9 @@ a.selected {
     .whoami-quote-content {
       padding: 14px;
       width: 83.3333%; } }
+  @media screen and (min-width: 1600px) {
+    .whoami-quote-content {
+      width: 30%; } }
 
 .projects-quote-content {
   text-align: left;
@@ -117,6 +123,9 @@ a.selected {
     .projects-quote-content {
       padding: 14px;
       width: 83.3333%; } }
+  @media screen and (min-width: 1600px) {
+    .projects-quote-content {
+      width: 30%; } }
 
 .content-divider-home {
   display: block;
@@ -218,6 +227,7 @@ a.selected {
   padding: 120px 0px;
   background-color: #2E3238; }
   .hero-stripe-whoami h1 {
+    text-transform: uppercase;
     color: #ba81ff; }
   .hero-stripe-whoami p {
     color: darkgray; }
@@ -229,6 +239,7 @@ a.selected {
   padding: 120px 0px;
   background-color: #2E3238; }
   .hero-stripe-projects h1 {
+    text-transform: uppercase;
     color: #15A3F9; }
   .hero-stripe-projects p {
     color: darkgray; }
@@ -240,6 +251,7 @@ a.selected {
   padding: 120px 0px;
   background-color: #2E3238; }
   .hero-stripe-contact h1 {
+    text-transform: uppercase;
     color: #56ebc3; }
   .hero-stripe-contact p {
     color: darkgray; }
