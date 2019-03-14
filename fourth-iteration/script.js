@@ -35,6 +35,8 @@
 	scotchApp.controller('mainController', function($scope) {
 		// create a message to display in our view
 		$scope.homeQuote = "My name’s Colby and I’m a Web Developer in CT. I’m currently a digital technician and problem solver at Mintz + Hoke Advertising Agency.";
+
+		
 		
 	});
 
@@ -57,6 +59,38 @@
 		$scope.mainframe = 'IBM Z Systems, z/OS, z/TPF, JCL, COBOL, JSON, MongoDB';
 		$scope.technical = 'Network infrastructure, Wireshark, Nmap, OpenVAS, Oracle, Access, Hexadecimal, Binary, Hexadecimal-Binary conversions, Ceaser Cyphers, Word, Excel, PowerPoint, Photoshop';
 		$scope.skillsFooter = 'At the moment I am in the process of building a compiler, which takes up much of my free time on top of applying to jobs.'
+
+		$(document).ready(function () {
+			var forEach = function (array, callback, scope) {
+			for (var i = 0; i < array.length; i++) {
+			  callback.call(scope, i, array[i]); // passes back stuff we need
+			}
+		  };
+		
+		  var containers = document.querySelectorAll(".container-phone");
+		
+		  forEach(containers, function (index, value) {
+			value.addEventListener("click", function () {
+			  this.classList.toggle("alert-is-shown");
+			});
+		  });
+		});  
+
+		$(document).ready(function () {
+			var forEach2 = function (array2, callback2, scope2) {
+			for (var j = 0; j < array2.length; j++) {
+			  callback2.call(scope2, j, array2[j]); // passes back stuff we need
+			}
+		  };
+		
+		  var containers2 = document.querySelectorAll(".container-tablet");
+		
+		  forEach2(containers2, function (index, value) {
+			value.addEventListener("click", function () {
+			  this.classList.toggle("alert-is-shown");
+			});
+		  });
+		});  
 
 	});
 

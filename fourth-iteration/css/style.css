@@ -127,6 +127,17 @@ a.selected {
     .projects-quote-content {
       width: 30%; } }
 
+.contact-quote-content {
+  text-align: left;
+  margin: 50px auto;
+  justify-self: center;
+  width: 37%;
+  align-self: center; }
+  @media screen and (max-width: 1024px) {
+    .contact-quote-content {
+      padding: 14px;
+      width: 83.3333%; } }
+
 .content-divider-home {
   display: block;
   position: relative;
@@ -137,7 +148,7 @@ a.selected {
   margin-bottom: 10px; }
 
 .arrow-bounce {
-  position: absolute;
+  margin-top: 50px;
   bottom: 30px;
   width: 100%;
   left: auto;
@@ -201,7 +212,7 @@ a.selected {
   padding: 0px !important;
   height: 100%;
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   background-color: #fff;
   color: #444; }
   @media screen and (max-width: 1024px) {
@@ -365,8 +376,12 @@ a.selected {
   padding-right: 15px;
   text-align: center; }
 
+.project-wrapper {
+  background-color: #E9F4F8; }
+
 /*Interactive Phone*/
 .interactive-container {
+  background-color: #E9F4F8;
   display: flex;
   flex-direction: row; }
   @media only screen and (max-width: 1024px) {
@@ -397,6 +412,7 @@ a.selected {
   opacity: 1; }
 
 .container-phone {
+  cursor: pointer;
   align-self: flex-end;
   margin: 30px auto;
   padding: 0px;
@@ -432,6 +448,10 @@ a.selected {
   height: 20px; }
 
 .alert-phone {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1.5;
   text-align: center;
   width: 90%;
   height: 60px;
@@ -473,6 +493,7 @@ a.selected {
   opacity: 1; }
 
 .container-tablet {
+  cursor: pointer;
   align-self: flex-end;
   margin: 30px auto;
   background: url("https://images.pexels.com/photos/1070345/pexels-photo-1070345.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
@@ -506,6 +527,10 @@ a.selected {
   height: 28px; }
 
 .alert-tablet {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1.5;
   transition: 0.25s;
   transition-timing-function: ease-out;
   width: 90%;
