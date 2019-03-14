@@ -67,6 +67,15 @@
 
  <!-- Bootstrap Core JavaScript -->
  <script src="js/bootstrap.min.js"></script>
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
  <script>
    document.getElementById('focusmeplease').focus();
  </script>
@@ -77,14 +86,45 @@
       $(this).addClass('selected');
   });
  </script>
- 
- <script>
-    $(window).scroll(function () {
-      $(".intro-section").css({
-        'opacity': 1 - (($(this).scrollTop()) / 800)
-      });
+
+<script type="text/javascript">
+  // https://css-tricks.com/snippets/javascript/loop-queryselectorall-matches/
+  $(document).ready(function () {
+    var forEach = function (array, callback, scope) {
+    for (var i = 0; i < array.length; i++) {
+      callback.call(scope, i, array[i]); // passes back stuff we need
+    }
+  };
+
+  var containers = document.querySelectorAll(".container-phone");
+
+  forEach(containers, function (index, value) {
+    value.addEventListener("click", function () {
+      this.classList.toggle("alert-is-shown");
     });
-  </script>
+  });
+});  
+
+</script>
+<script>
+  // https://css-tricks.com/snippets/javascript/loop-queryselectorall-matches/
+  $(document).ready(function () {
+    var forEach2 = function (array2, callback2, scope2) {
+    for (var j = 0; j < array2.length; j++) {
+      callback2.call(scope2, j, array2[j]); // passes back stuff we need
+    }
+  };
+
+  var containers2 = document.querySelectorAll(".container-tablet");
+
+  forEach2(containers2, function (index, value) {
+    value.addEventListener("click", function () {
+      this.classList.toggle("alert-is-shown");
+    });
+  });
+});  
+ 
+</script>
 
 </body>
 

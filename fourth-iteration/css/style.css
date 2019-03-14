@@ -365,6 +365,193 @@ a.selected {
   padding-right: 15px;
   text-align: center; }
 
+/*Interactive Phone*/
+.interactive-container {
+  display: flex;
+  flex-direction: row; }
+  @media only screen and (max-width: 1024px) {
+    .interactive-container {
+      display: block; } }
+
+.solution-text-container {
+  display: flex;
+  align-items: center; }
+
+.solution-text {
+  max-width: 80%;
+  margin: 50px auto; }
+
+#phone-container {
+  margin-top: 40px;
+  display: flex; }
+
+.container-phone .alert-phone {
+  transform: translateY(130%);
+  transition-timing-function: ease-in;
+  transition: 0.2s; }
+
+.container-phone.alert-is-shown .alert-phone {
+  transition: 0.25s;
+  transition-timing-function: ease-out;
+  transform: translateY(-50%);
+  opacity: 1; }
+
+.container-phone {
+  align-self: flex-end;
+  margin: 30px auto;
+  padding: 0px;
+  background: url("https://images.pexels.com/photos/1886516/pexels-photo-1886516.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 150px;
+  border: 10px solid #000;
+  height: 280px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 20px 20px / 20px 20px 20px 20px; }
+
+.container-phone::before {
+  content: "";
+  background: #000;
+  position: absolute;
+  z-index: 21;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 38px; }
+
+.container-phone::after {
+  content: "";
+  background: #282727;
+  position: absolute;
+  z-index: 20;
+  bottom: 30px;
+  left: 0;
+  width: 100%;
+  height: 20px; }
+
+.alert-phone {
+  text-align: center;
+  width: 90%;
+  height: 60px;
+  left: 5%;
+  bottom: 70px;
+  background: #e9f4f8;
+  border-radius: 4px;
+  opacity: 0;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  position: absolute;
+  z-index: 10; }
+
+.note-phone {
+  position: absolute;
+  bottom: -5%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font: 12px monospace;
+  color: #999;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid;
+  border-radius: 50%;
+  height: 30px;
+  width: 30px;
+  z-index: 21; }
+
+.container-tablet.alert-tablet {
+  transform: translateY(150%);
+  transition-timing-function: ease-in;
+  transition: 0.2s; }
+
+.container-tablet.alert-is-shown .alert-tablet {
+  transition: 0.25s;
+  transition-timing-function: ease-out;
+  transform: translateY(-300%);
+  opacity: 1; }
+
+.container-tablet {
+  align-self: flex-end;
+  margin: 30px auto;
+  background: url("https://images.pexels.com/photos/1070345/pexels-photo-1070345.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 270px;
+  border: 10px solid #000;
+  height: 390px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 20px 20px / 20px 20px 20px 20px; }
+
+.container-tablet::before {
+  content: "";
+  background: #000;
+  position: absolute;
+  z-index: 20;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 45px; }
+
+.container-tablet::after {
+  content: "";
+  background: #282727;
+  position: absolute;
+  z-index: 19;
+  bottom: 30px;
+  left: 0;
+  width: 100%;
+  height: 28px; }
+
+.alert-tablet {
+  transition: 0.25s;
+  transition-timing-function: ease-out;
+  width: 90%;
+  height: 60px;
+  left: 5%;
+  bottom: -8px;
+  background: #e9f4f8;
+  border-radius: 4px;
+  opacity: 0;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  position: absolute;
+  z-index: 10;
+  text-align: center; }
+
+.note-tablet {
+  position: absolute;
+  bottom: -4%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font: 12px monospace;
+  color: #999;
+  text-transform: uppercase;
+  z-index: 21;
+  height: 36px;
+  width: 37px;
+  border: 1px solid;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%; }
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  #phone-container {
+    display: block; }
+
+  .container-phone {
+    margin-top: 20px;
+    margin-bottom: 20px; }
+
+  .container-tablet {
+    margin-bottom: 20px; }
+
+  .container-laptop {
+    margin-bottom: 20px; } }
+/* end interactive phone*/
 footer {
   display: flex;
   align-content: center;
