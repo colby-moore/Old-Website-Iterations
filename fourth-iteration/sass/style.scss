@@ -1,4 +1,5 @@
 html, body{
+    background-color: #E9F4F8;
     font-family: 'Work Sans', sans-serif;
     font-weight: 300;
     font-style: normal;
@@ -176,7 +177,7 @@ h3{
     }
 
   .arrow-bounce{
-    margin-top: 50px;
+    margin-top: 40px;
     bottom: 30px;
     width: 100%;
     left: auto;
@@ -197,9 +198,9 @@ h3{
       // /* you could also use milliseconds (ms) or something like 2.5s */
       // -webkit-animation: colorchangereverse 11s infinite 1.25s; /* Chrome and Safari */
       animation-delay: 7s;
-      animation: bounce 2.75s infinite 7.25s; /* animation-name followed by duration in seconds*/
+      animation: bounce 2.75s infinite 2.75s; /* animation-name followed by duration in seconds*/
       /* you could also use milliseconds (ms) or something like 2.5s */
-      -webkit-animation: bounce 2.75s infinite 7.25s; /* Chrome and Safari */
+      -webkit-animation: bounce 2.75s infinite 2.75s; /* Chrome and Safari */
       width: 40px;
     }
 
