@@ -28,16 +28,30 @@
 
 <!-- define angular controller -->
 <body ng-controller="mainController">
-    <nav class="welcomenav fill">
-      <ul>
-        <li><a id="focusmeplease" class="selected" href="#">HOME</a></li>
-        <li><a href="#whoami">WHOAMI</a></li>
-        <li><a href="#projects">PROJECTS</a></li>
-        <li><a href="#contact">CONTACT</a></li>
-      </ul>
+    <nav class="navbar navbar-default">
+      <div class="container-fluid navbar-flex">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+    
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+            <li><a id="focusmeplease" class="selected" href="#" data-toggle="collapse" data-target=".navbar-collapse">HOME</a></li>
+            <li><a href="#whoami" data-toggle="collapse" data-target=".navbar-collapse">WHOAMI</a></li>
+            <li><a href="#projects" data-toggle="collapse" data-target=".navbar-collapse">PROJECTS</a></li>
+            <li><a href="#contact" data-toggle="collapse" data-target=".navbar-collapse">CONTACT</a></li>
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
     </nav>
 
-  <!-- </div> -->
   <div id="container">
 
     <!-- angular templating -->
@@ -104,8 +118,8 @@
     });
   });
 });  
-
 </script>
+
 <script>
   // https://css-tricks.com/snippets/javascript/loop-queryselectorall-matches/
   $(document).ready(function () {
@@ -123,7 +137,6 @@
     });
   });
 });  
- 
 </script>
 
 </body>
