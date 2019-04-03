@@ -65,36 +65,26 @@ h3{
           padding: 0px;
       }
   
-      li a:focus{
+      li a:focus, a:hover, a.selected{
         color: white !important;
-          border-bottom: 2px solid;
-          border-color: white;
-          // border-image: linear-gradient(to left, #FBC4C4, #CBEDE9);
-        }
-  
-        li a:hover{
-          border-bottom: 2px solid;
-          border-color: #CBEDE9;
-          background-color: transparent;
-          // border-image: linear-gradient(to left, #FBC4C4, #CBEDE9);
-        }
-  
-        li a:focus{
-          color: white;
-          background: transparent;
-        }
-  
-        a.selected{
-          background: transparent;
-          border-bottom:2px solid;
-          border-color: white;
+        padding-bottom: 20px;
+        background:
+          linear-gradient(
+            to left, 
+            rgba(137, 63, 228, 1) 0%,
+            rgba(21, 163, 249, 1) 50%,
+            rgba(86, 235, 195, 1) 100%
+          )
+          left 
+          bottom 
+          no-repeat; 
+        background-size:100% 3px ;
         }
   }
-
-  
 }
 
 .navbar-header{
+  height: 70px;
   border: none;
   background: #2e3238;
   display: flex;
@@ -111,6 +101,7 @@ h3{
 .navbar-toggle{
   background-color: transparent;
   margin-right: 0px;
+  border: none;
 }
 
 .navbar-default .navbar-nav>li>a{
@@ -123,6 +114,23 @@ h3{
 
 .navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover{
   background-color: transparent;
+}
+
+.navbar-default .navbar-toggle .icon-bar{
+  width: 35px;
+}
+
+.icon-bar1{
+  background-color: #893fe4 !important;
+}
+
+.icon-bar2{
+  background-color: #15A3F9 !important;
+  
+}
+
+.icon-bar3{
+  background-color: #56ebc3 !important; 
 }
 
 .navbar-flex{
@@ -801,7 +809,7 @@ footer{
       color: #161618;
       text-align: center;
       font-size: 12px;
-      margin: 0px 16px;
+      margin: 0px 10px;
   }
 
   footer img{

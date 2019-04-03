@@ -57,23 +57,14 @@ h3 {
         font-size: 12px;
         margin: 0px 16px;
         padding: 0px; }
-      .navbar li a:focus {
+      .navbar li a:focus, .navbar a:hover, .navbar a.selected {
         color: white !important;
-        border-bottom: 2px solid;
-        border-color: white; }
-      .navbar li a:hover {
-        border-bottom: 2px solid;
-        border-color: #CBEDE9;
-        background-color: transparent; }
-      .navbar li a:focus {
-        color: white;
-        background: transparent; }
-      .navbar a.selected {
-        background: transparent;
-        border-bottom: 2px solid;
-        border-color: white; } }
+        padding-bottom: 20px;
+        background: linear-gradient(to left, #893fe4 0%, #15a3f9 50%, #56ebc3 100%) left bottom no-repeat;
+        background-size: 100% 3px; } }
 
 .navbar-header {
+  height: 70px;
   border: none;
   background: #2e3238;
   display: flex;
@@ -87,7 +78,8 @@ h3 {
 
 .navbar-toggle {
   background-color: transparent;
-  margin-right: 0px; }
+  margin-right: 0px;
+  border: none; }
 
 .navbar-default .navbar-nav > li > a {
   color: darkgray; }
@@ -97,6 +89,18 @@ h3 {
 
 .navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
   background-color: transparent; }
+
+.navbar-default .navbar-toggle .icon-bar {
+  width: 35px; }
+
+.icon-bar1 {
+  background-color: #893fe4 !important; }
+
+.icon-bar2 {
+  background-color: #15A3F9 !important; }
+
+.icon-bar3 {
+  background-color: #56ebc3 !important; }
 
 @media screen and (min-width: 769px) {
   .navbar-flex {
@@ -649,7 +653,7 @@ footer li a {
   color: #161618;
   text-align: center;
   font-size: 12px;
-  margin: 0px 16px; }
+  margin: 0px 10px; }
 
 footer img {
   width: 35px; }
