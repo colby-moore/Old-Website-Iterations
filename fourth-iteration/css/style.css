@@ -346,6 +346,7 @@ h3 {
   padding: 75px 50px;
   font-size: 36px !important; }
   .content-box-left a {
+    text-decoration: none;
     color: black;
     transition: 1s;
     font-size: 16px;
@@ -633,29 +634,10 @@ h3 {
 footer {
   display: flex;
   align-content: center;
-  justify-content: center; }
+  justify-content: center;
+  margin: 50px 0px; }
 
-footer ul {
-  margin: 50px 0px;
-  padding: 0px;
-  list-style-type: none;
-  overflow: hidden;
-  background-color: transparent; }
-
-footer li {
-  float: left; }
-
-footer li a {
-  outline: none;
-  text-decoration: none;
-  font-weight: bold;
-  display: block;
-  color: #161618;
-  text-align: center;
-  font-size: 12px;
-  margin: 0px 10px; }
-
-footer img {
+.copyright img {
   width: 35px; }
 
 @keyframes colorchange {
