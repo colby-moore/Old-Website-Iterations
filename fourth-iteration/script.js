@@ -34,7 +34,7 @@
 	// create the controller and inject Angular's $scope
 	scotchApp.controller('mainController', function($scope) {
 		// create a message to display in our view
-		$scope.homeQuote = "My name’s Colby and I’m a Web Developer in CT. I’m currently a digital technician and problem solver at Mintz + Hoke Advertising Agency.";
+		$scope.homeQuote = "My name’s Colby and I’m a Web Developer in CT. I’m currently a digital team member and problem solver at Mintz + Hoke Advertising Agency.";
 
 		
 		
