@@ -1,4 +1,5 @@
-html, body {
+html,
+body {
   background-color: #E9F4F8;
   font-family: 'Work Sans', sans-serif;
   font-weight: 300;
@@ -57,7 +58,9 @@ h3 {
         font-size: 12px;
         margin: 0px 16px;
         padding: 0px; }
-      .navbar li a:focus, .navbar a:hover, .navbar a.selected {
+      .navbar li a:focus,
+      .navbar a:hover,
+      .navbar a.selected {
         color: white !important;
         padding-bottom: 20px;
         background: linear-gradient(to left, #893fe4 0%, #15a3f9 50%, #56ebc3 100%) left bottom no-repeat;
@@ -84,10 +87,12 @@ h3 {
 .navbar-default .navbar-nav > li > a {
   color: darkgray; }
 
-.navbar-default .navbar-nav > li > a:focus, .navbar-default .navbar-nav > li > a:hover {
+.navbar-default .navbar-nav > li > a:focus,
+.navbar-default .navbar-nav > li > a:hover {
   color: white; }
 
-.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
+.navbar-default .navbar-toggle:focus,
+.navbar-default .navbar-toggle:hover {
   background-color: transparent; }
 
 .navbar-default .navbar-toggle .icon-bar {
@@ -282,7 +287,6 @@ h3 {
   height: 100%;
   width: 100%; }
 
-/* End work boxes */
 .hero-stripe-whoami {
   padding: 120px 0px;
   background-color: #2E3238; }
@@ -319,7 +323,6 @@ h3 {
     .hero-stripe-contact {
       padding: 75px 0px; } }
 
-/* Connect */
 .content-section {
   justify-content: center;
   display: flex;
@@ -649,7 +652,8 @@ footer {
     background: #FBC4C4; }
   100% {
     background: #ffffff; } }
-@-webkit-keyframes colorchange /* Safari and Chrome - necessary duplicate */ {
+@-webkit-keyframes colorchange
+/* Safari and Chrome - necessary duplicate */ {
   0% {
     background: #ffffff; }
   33% {
@@ -667,7 +671,8 @@ footer {
     background: #CBEDE9; }
   100% {
     background: #ffffff; } }
-@-webkit-keyframes colorchangereverse /* Safari and Chrome - necessary duplicate */ {
+@-webkit-keyframes colorchangereverse
+/* Safari and Chrome - necessary duplicate */ {
   0% {
     background: #ffffff; }
   33% {
